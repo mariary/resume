@@ -1,0 +1,136 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 30px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 300;
+    height: 70vh;
+}
+
+.info {
+    max-width: 390px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px 5px 20px 5px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-right: 50px;
+}
+
+.about {
+    color: #a96a3b;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.text span {
+    color: #03a3bc;
+    font-weight: 400;
+}
+
+.arrow {
+    width: 30px;
+    transform: rotateZ(90deg);
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.active {
+    transform: rotateZ(270deg) scale(1.1);
+    transition: 200ms;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+    transition: 200ms;
+}
+
+.skills {
+    color: #ffffff;
+    margin: 0 0 100px;
+}
+
+.skills_title {
+    border-bottom: 2px solid #a3aab1;
+    font-size: 35px;
+    text-align: center;
+    max-width: 220px;
+    margin: 10px auto;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.skills_list {
+    margin: 0 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills_list_item {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.skills_list_item::marker {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 875px) {
+    .main {
+        font-size: 15px;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills_title {
+        font-size: 25px;
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .img {
+        margin: 30px 0;
+    }
+    .skills{
+        margin: 0 0 20px;
+    }
+
+    .skills_title {
+        font-size: 23px;
+        max-width: 140px;
+    }
+
+    .skills_list_item {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .arrow {
+        display: none;
+    }
+}

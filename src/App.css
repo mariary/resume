@@ -1,0 +1,27 @@
+body{
+  background-image: url("cdW6pCjeUjw.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+html,
+body {
+  height:100%;
+}
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

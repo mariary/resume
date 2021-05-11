@@ -1,0 +1,84 @@
+.main {
+    height: 80vh;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+}
+
+.uni {
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education span {
+    font-weight: 400;
+    border-bottom: 2px solid #a3aab1;
+    margin: 0 0 0 5px;
+}
+
+.job {
+    text-align: left;
+}
+
+.title {
+    background: #fff;
+    color: #444f5d;
+    width: 120px;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    margin: 10px 0 0 15px;
+    padding: 0;
+}
+
+.list_item::marker, .about_item::marker {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.time {
+    margin: 0 5px;
+    font-weight: 400;
+    border: none;
+}
+
+.name {
+    border-bottom: 1px solid #a3aab1;
+}
+.about {
+    font-size: 0.9em;
+    margin: 10px 0 0 15px;
+    padding: 0;
+}
+.about_item{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        font-size: 16px;
+    }
+    .education span {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        font-size: 14px;
+    }
+}
