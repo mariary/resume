@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useRef,useEffect} from 'react'
 import s from './Header.module.css'
 import {NavLink} from 'react-router-dom'
 import tel from '../../content/social/tel.svg'
@@ -12,15 +12,29 @@ export const Header = () => {
 
     const [active, setActive] = useState(false)
 
+    const node = useRef()
+
     const openMenu = () => {
         setActive(true)
     }
     const closeMenu = () => {
         setActive(false)
     }
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClick);
+        return () => {
+            document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+
+    const handleClick = e => {
+        if (node.current.contains(e.target)===false) {
+            setActive(false)
+        }
+    };
 
     return (
-        <div className={s.wrapper}>
+        <div className={s.wrapper} ref={node}>
             <button onClick={openMenu} className={`${s.btn} ${s.btn_menu}  ${active ? s.btn : s.active}`}>
                 <img src={menu} className={s.btn_img}/>
             </button>

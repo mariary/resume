@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import s from './Main.module.css'
-import me from './me.PNG'
-import arrow from './arrow.svg'
+import me from '../../../content/me.PNG'
+import arrow from '../../../content/arrow.svg'
 import {useState} from 'react'
 
 export const Main = () => {

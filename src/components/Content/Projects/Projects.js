@@ -14,29 +14,29 @@ export const Projects = () => {
             name: 'Music App',
             link: 'https://mariary.github.io/music-app/',
             img: music_app,
-            technology:'Написано на React.',
+            technology:'Написано на React',
             about: 'Приложение для поиска музыки.'
         }, {
             id: 2,
             name: 'Phonebook',
             link: 'https://mariary.github.io/phonebook/',
             img: phonebook,
-            technology:'Использование React, Redux, Hooks.',
-            about: 'Телефонная книга с возможность добавлять и удалять номера, а также получение данных через API.'
+            technology:'Использование React, Redux, Hooks',
+            about: 'Телефонная книга с возможностью добавлять и удалять номера, а также получение данных через API.'
         }, {
             id: 3,
             name: 'Film Search',
             link: 'https://mariary.github.io/film-react-app/',
             img: film_app,
-            technology:'Использование React и Hooks.',
-            about: 'Поиск фильмов. Адаптив под мобильные устройства'
+            technology:'Использование React и Hooks',
+            about: 'Поиск фильмов. Адаптив под мобильные устройства.'
         }, {
             id: 4,
             name: 'Weather app',
             link: 'https://mariary.github.io/weather_app/',
             img: weather,
             technology:'Vanilla JS',
-            about: 'Прогноз погоды'
+            about: 'Прогноз погоды.'
         }, {
             id: 5,
             name: 'To Do App',
