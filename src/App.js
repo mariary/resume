@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <Header/>
             <div className='content'>
-                <Route exact path={'/'}>
+                <Route exact path={'/resume'}>
                     <Redirect to={'/home'}/>
                 </Route>
                 <Route path={'/home'} component={Main}/>
