@@ -6,11 +6,12 @@ import {About} from './components/Content/About/About'
 import {Projects} from './components/Content/Projects/Projects'
 
 function App() {
+
     return (
         <div className="App">
             <Header/>
             <div className='content'>
-                <Route exact path={'/resume'}>
+                <Route exact path={'/'}>
                     <Redirect to={'/home'}/>
                 </Route>
                 <Route path={'/home'} component={Main}/>

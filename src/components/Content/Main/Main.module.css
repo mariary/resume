@@ -46,6 +46,7 @@
     transform: rotateZ(90deg);
     margin: 30px 0;
     cursor: pointer;
+    transition: 200ms;
 }
 
 .active {
@@ -126,7 +127,7 @@ p {
     }
 
     .skills_list_item {
-        font-size: 17px;
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 460px) {

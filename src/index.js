@@ -6,7 +6,7 @@ import {Route, Router} from 'react-router'
 import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/resume">
     <Route path={'/'} component={App}/>
   </BrowserRouter>,
   document.getElementById('root')

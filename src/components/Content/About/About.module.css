@@ -26,6 +26,7 @@
 
 .job {
     text-align: left;
+    padding: 0 0 30px;
 }
 
 .title {
@@ -78,14 +79,19 @@
 
 @media screen and (max-width: 600px) {
     .main{
-        font-size: 14px;
+        font-size: 17px;
     }
     .uni {
         display: none;
+    }
+    .education span{
+        border: none;
+        text-decoration: underline;
     }
 }
 @media screen and (max-width: 520px) {
     .education{
        flex-direction: column;
+        margin: 10px 0 20px;
     }
 }

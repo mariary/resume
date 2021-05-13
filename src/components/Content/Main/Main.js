@@ -21,6 +21,20 @@ export const Main = () => {
         }
     }
 
+    const scroll = () => {
+        let position = skillsRef.current.getBoundingClientRect()
+        let height = window.innerHeight - 100
+        let delta = height - position.top
+        if (delta > 0) {
+            setActive(true)
+        }
+        else (
+            setActive(false)
+        )
+    }
+
+    window.addEventListener('scroll', scroll)
+
     return (
         <div className="content">
             <div className={s.main}>

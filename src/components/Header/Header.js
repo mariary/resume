@@ -1,6 +1,6 @@
-import React, {useState,useRef,useEffect} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import s from './Header.module.css'
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import tel from '../../content/social/tel.svg'
 import inst from '../../content/social/inst.svg'
 import vk from '../../content/social/vk.svg'
@@ -8,7 +8,7 @@ import hh from '../../content/social/hh.svg'
 import menu from '../../content/menu.svg'
 import close from '../../content/close.svg'
 
-export const Header = () => {
+export const Header = (props) => {
 
     const [active, setActive] = useState(false)
 
@@ -21,28 +21,28 @@ export const Header = () => {
         setActive(false)
     }
     useEffect(() => {
-        document.addEventListener("mousedown", handleClick);
+        document.addEventListener('mousedown', handleClick)
         return () => {
-            document.removeEventListener("mousedown", handleClick);
-        };
-    }, []);
+            document.removeEventListener('mousedown', handleClick)
+        }
+    }, [])
 
     const handleClick = e => {
-        if (node.current.contains(e.target)===false) {
+        if (node.current.contains(e.target) === false) {
             setActive(false)
         }
-    };
+    }
 
     return (
         <div className={s.wrapper} ref={node}>
             <button onClick={openMenu} className={`${s.btn} ${s.btn_menu}  ${active ? s.btn : s.active}`}>
                 <img src={menu} className={s.btn_img}/>
             </button>
-            <div className={`${s.main} ${ active ? s.active : s.main }`}>
+            <div className={`${s.main} ${active ? s.active : s.main}`}>
                 <button onClick={closeMenu} className={`${s.btn} ${s.btn_close} ${active ? s.active : s.btn}`}>
                     <img src={close} className={s.btn_img}/>
                 </button>
-                <div className={s.menu}>
+                <div className={s.menu} onClick={closeMenu}>
                     <NavLink to={'/home'} activeClassName={s.selected}>Главная</NavLink>
                     <NavLink to={'/about'} activeClassName={s.selected}>Обо мне</NavLink>
                     <NavLink to={'/projects'} activeClassName={s.selected}>Проекты</NavLink>
